@@ -1,20 +1,6 @@
 // business logic:
 
-var pingPongLogic = function(number) {
-  displayArray = [];
-  for (var i = 1; i > number; i += 1;) {
-      if (number % 15 === 0) {
-        displayArray.push("pingpong");
-      } if else (number % 5 === 0) {
-        displayArray.push("pong");
-      } if else (number % 3 === 0) {
-        displayArray.push("ping");
-      } else {
-        displayArray.push(number);
-      }
-  }
-  return displayArray;
-}
+
 
 
 
@@ -25,8 +11,24 @@ $(document).ready(function() {
   event.preventDefault();
   var stringInput = $("#number").val();
   var integer = parseInt(stringInput);
-  console.log(stringInput);
-  console.log(integer);
-  $(".results").append(pingPongLogic(number);
+  var pingPongLogic = function(number) {
+    for (var index = 1; index <= number; index += 1) {
+        if (number % 15 === 0) {
+          $("ul#output").append("<li>pingpong</li>");
+          console.log("pingpong")
+        } else if (number % 5 === 0) {
+          $("ul#output").append("<li>pong</li>");
+          console.log("pong")
+        } else if (number % 3 === 0) {
+          $("ul#output").append("<li>ping</li>");
+          console.log("ping")
+        } else {
+          $("ul#output").append("<li>" + number + "</li>");
+          console.log(number);
+        }
+    }
+  }
+
+  console.log(pingPongLogic(integer));
   });
 });
