@@ -19,6 +19,9 @@
 - App will change 15 to 'pingpong'
   Input: 15
   Output: ...13, 14, pingpong
+- User will enter new number and see new results
+- HTML & CSS mimic example
+- 
 
 ## Setup/Installation Requirements
 

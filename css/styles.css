@@ -1,1 +1,15 @@
+#output {
+  font-size: 2em;
+}
 
+li:nth-child(3n+0) {
+  color: red;
+}
+
+li:nth-child(5n+0) {
+  color: blue;
+}
+
+li:nth-child(15n+0) {
+  color: green;
+}
