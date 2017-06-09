@@ -13,9 +13,6 @@ var pingPongLogic = function(number) {
   }
 }
 
-
-
-
 // user interface logic:
 
 $(document).ready(function() {
