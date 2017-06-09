@@ -8,6 +8,11 @@ body {
   background-color: white;
 }
 
+p {
+  font-size: 18px;
+  font-family: Tahoma;
+}
+
 #output {
   font-size: 2em;
 }
@@ -16,14 +21,27 @@ body {
   font-size: 2em;
 }
 
-li:nth-child(3n+0) {
+ul > li:nth-child(3n+0) {
   color: red;
 }
 
-li:nth-child(5n+0) {
+ul > li:nth-child(5n+0) {
   color: blue;
 }
 
-li:nth-child(15n+0) {
+ul > li:nth-child(15n+0) {
   color: green;
+}
+
+ol {
+    list-style-position: inside;
+    color: black;
+}
+ol li {
+
+    background-image: url('../img/green.png');
+    background-size: 29px;
+    background-position: -7px;
+    background-repeat: no-repeat;
+    padding-left: 7px;
 }

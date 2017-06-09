@@ -1,5 +1,7 @@
 // business logic:
 var pingPongLogic = function(number) {
+  console.log(this);
+  $(this).prev().remove();
   for (var index = 1; index <= number; index += 1) {
     if (index % 15 === 0) {
       $("ul#output").append("<li>pingpong</li>");
@@ -20,6 +22,6 @@ $(document).ready(function() {
   event.preventDefault();
   var stringInput = $("#number").val();
   var integer = parseInt(stringInput);
-  console.log(pingPongLogic(integer));
+  pingPongLogic(integer);
   });
 });
