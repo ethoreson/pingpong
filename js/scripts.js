@@ -20,6 +20,7 @@ var pingPongLogic = function(number) {
 $(document).ready(function() {
   $("#submitButton").click(function(event) {
   event.preventDefault();
+  $("ul#output").empty();
   var stringInput = $("#number").val();
   var integer = parseInt(stringInput);
   pingPongLogic(integer);
