@@ -1,4 +1,18 @@
+body {
+  background-image: url(../img/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: white;
+}
+
 #output {
+  font-size: 2em;
+}
+
+#number_label {
   font-size: 2em;
 }
 
