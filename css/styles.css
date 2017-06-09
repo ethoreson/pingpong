@@ -1,6 +1,5 @@
 body {
   background-image: url(../img/background.jpeg);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -11,6 +10,14 @@ body {
 p {
   font-size: 18px;
   font-family: Tahoma;
+}
+
+.col-lg-3 {
+  border: 2px red dashed;
+}
+
+a {
+  text-decoration: underline;
 }
 
 #output {
